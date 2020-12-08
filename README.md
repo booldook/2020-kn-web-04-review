@@ -17,9 +17,18 @@ $(".a").hasClass("b").hide();
 $(".a").append('<div>A</div>').hide(); //정답
 $(".a").width().hide();
 $(".a").attr("id").hide();
+
+// 다음의 문장을 Javascript로 변환하세요.
+$("#sample")
+document.getElementById("sample")
 ```
 
 0. Selector(선택자)
+```js
+$(".a")
+$("div")
+$(".a > div")
+```
 
 1. Animation
 ```js
