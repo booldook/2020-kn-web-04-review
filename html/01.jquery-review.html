@@ -13,12 +13,14 @@
 <body>
 	<h1 class="a" id="sample">Hello jQuery</h1>
 	<script>
-	console.log( document.getElementById('sample') );
-	console.log( $('#sample') );
+	// console.log( document.getElementById('sample') );
+	// console.log( $('#sample')[0] );
 	// $('#sample').click(function(){ alert("안녕하세요"); });
 	// $(document.getElementById('sample')).click(function(){ alert("안녕하세요"); });
-	document.getElementById('sample').addEventListener('click', function(){
-		alert("안녕하세요");
+	// document.getElementById('sample').addEventListener('click', function(){ alert("안녕하세요");});
+
+	$("#sample").click(function(){
+		$(this).slideUp(3000)
 	});
 
 

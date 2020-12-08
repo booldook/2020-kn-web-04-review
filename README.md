@@ -25,14 +25,20 @@ document.getElementById("sample")
 
 0. Selector(선택자)
 ```js
+// 태그나 객체를 $() 로 실행하면 jQuery 객체가 리턴된다.
 $(".a")
 $("div")
 $(".a > div")
+$(document.getElementById('sample'))
+$('<div>A</div>')
+
+// $()[0] => 자바스크립트가 된다
+$("#sample")[0] // 자바스크립트
 ```
 
 1. Animation
 ```js
-hide()
+hide(300, function(){  })
 show()
 fadeIn()
 fadeOut()

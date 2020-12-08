@@ -1,0 +1,3 @@
+.box { width: 200px; height: 200px; margin: 3rem auto; background-color: blue; 
+	transition: all 0.5s;}
+.box.active {transform: scale(0);}
