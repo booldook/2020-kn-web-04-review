@@ -98,6 +98,29 @@ $(".a").attr({
 	- String, Number, Boolean, undefined
 2. Reference(참조) Type
 	- Array, Object, Null
-```js
 
+```js
+var arr = [1, 2, 3];
+var arr2 = arr;
+console.log(arr, arr2); // [1, 2, 3] (3) [1, 2, 3]
+arr.push(4)
+arr.push(5)
+console.log(arr, arr2); // [1, 2, 3, 4, 5] (5) [1, 2, 3, 4, 5]
+
+// 0, false, null, undefined => false
 ```
+
+### 2020-12-09 숙제
+#### 구구단을 만드세요.
+2단 2 x 1 =2 2 x 2 = 4 ...
+3단
+.
+.
+.
+
+    2단        3단       4단      5단 ...
+2 x 1 = 2   3 x 1 = 3
+2 x 2 = 4
+.
+.
+.
