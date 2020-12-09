@@ -49,9 +49,11 @@ $('.a').append('<div>A</div>').click() 		// return $('.a')
 $('<div>A</div>').appendTo('.a').click() 	// return $('<div>A</div>')
 ```
 
-3. Attribute
+3. Attribute, dataSet
 	- Getter: attr('속성')
 	- Setter: attr('속성', '값')
+	- Getter: data('키');
+	- Setter: data('키', '값');
 ```html
 <div class="a" id="A"></div>
 ```

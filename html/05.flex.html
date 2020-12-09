@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flex를 배워보자</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		/* 가로정렬 */
+		/* justify-content: flex-start; */
+		/* justify-content: flex-end; */
+		/* justify-content: center; */
+		/* justify-content: space-between; */
+		/* justify-content: space-around; */
+		/* justify-content: space-evenly; */
+		/* 세로정렬 */
+		/* align-items: stretch; */
+		/* align-items: flex-start; */
+		/* align-items: flex-end; */
+		/* align-items: center; */
+		/* align-items: baseline; */
+		.wrapper {
+			border: 10px solid red;
+			max-width: 1200px;
+			margin: auto;
+			padding: 2em;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		.box {
+			border: 2px solid blue;
+			padding: 0.5em;
+		}
+		.box:nth-child(1) {height: 80px;}
+		.box:nth-child(3) {height: 160px; font-size: 5em}
+		.box:nth-child(7) {height: 90px;}
+		.box:nth-child(9) {height: 120px;}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="box">BOX1</div>
+		<div class="box">BOX2</div>
+		<div class="box">BOX3</div>
+		<div class="box">BOX4</div>
+		<div class="box">BOX5</div>
+		<div class="box">BOX6</div>
+		<div class="box">BOX7</div>
+		<div class="box">BOX8</div>
+		<div class="box">BOX9</div>
+		<div class="box">BOX10</div>
+	</div>
+</body>
+
+</html>
