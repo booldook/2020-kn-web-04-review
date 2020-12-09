@@ -23,7 +23,8 @@ $("#sample")
 document.getElementById("sample")
 ```
 
-0. Selector(선택자)
+0. Selector(선택자) : return jQuery
+	- find() children() eq() siblings() parent() parents() next() prev()
 ```js
 // 태그나 객체를 $() 로 실행하면 jQuery 객체가 리턴된다.
 $(".a")
@@ -31,26 +32,22 @@ $("div")
 $(".a > div")
 $(document.getElementById('sample'))
 $('<div>A</div>')
+$('div', '.wrap') => .wrap 안의 div $('.wrap').find('div')와 같다
+$('div, .wrap')	=> div 와 .wrap 같이 선택
 
 // $()[0] => 자바스크립트가 된다
 $("#sample")[0] // 자바스크립트
 ```
 
-1. Animation
-```js
-hide(300, function(){  })
-show()
-fadeIn()
-fadeOut()
-slideUp()
-slideDown()
-toggle()
-fadeToggle()
-slideToggle()
-animate()
-```
+1. Animation : return jQuery
+	- hide() show() fadeIn() fadeOut() slideUp() slideDown() toggle() fadeToggle() slideToggle() animate()
 
-2. DOM(Document Object Model)
+2. DOM(Document Object Model) : return jQuery
+	- append() appendTo() prepend() prependTo() remove() empty(), html(), text()
+```js
+$('.a').append('<div>A</div>').click() 		// return $('.a')
+$('<div>A</div>').appendTo('.a').click() 	// return $('<div>A</div>')
+```
 
 3. Attribute
 
