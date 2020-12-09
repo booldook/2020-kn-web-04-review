@@ -1,0 +1,2 @@
+.wrapper {height: 100vh; display: flex; justify-content: center; align-items: center;}
+.gallery-wrapper {border: 3px solid #eee; max-width: 1200px; width: 80%; height: 80%;}

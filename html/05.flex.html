@@ -7,37 +7,55 @@
 	<title>Flex를 배워보자</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<style>
-		/* 가로정렬 */
+		/* 가로정렬(부모) */
 		/* justify-content: flex-start; */
 		/* justify-content: flex-end; */
 		/* justify-content: center; */
 		/* justify-content: space-between; */
 		/* justify-content: space-around; */
 		/* justify-content: space-evenly; */
-		/* 세로정렬 */
+		
+		/* 세로정렬(부모) */
 		/* align-items: stretch; */
 		/* align-items: flex-start; */
 		/* align-items: flex-end; */
 		/* align-items: center; */
 		/* align-items: baseline; */
+		
+		/* 넘치기(부모) */
+		/* flex-wrap: nowrap */
+		/* flex-wrap: wrap */
+		/* flex-wrap: wrap-reverse */
+
+		/* 방향(부모) */
+		/* flex-direction: row; */
+		/* flex-direction: row-reverse; */
+		/* flex-direction: column; */
+		/* flex-direction: column-reverse; */
+
+		/* 자식 */
+		/* flex-basis: 20px, 30% - width 대용 */ 
+		/* flex-grow: 0, ... 1, 2, 3 - 늘어나는 옵션 */
+		/* flex-shirink: 1, 0 - 줄어드는 옵션 */
 		.wrapper {
 			border: 10px solid red;
 			max-width: 1200px;
 			margin: auto;
 			padding: 2em;
 			display: flex;
-			justify-content: space-between;
-			align-items: flex-start;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: row;
+			align-content: space-evenly;
 		}
 
 		.box {
 			border: 2px solid blue;
 			padding: 0.5em;
+			flex: 100px 0 1;
 		}
-		.box:nth-child(1) {height: 80px;}
-		.box:nth-child(3) {height: 160px; font-size: 5em}
-		.box:nth-child(7) {height: 90px;}
-		.box:nth-child(9) {height: 120px;}
+		.box:nth-child(3) {order: -1;}
 	</style>
 </head>
 
