@@ -50,7 +50,19 @@ $('<div>A</div>').appendTo('.a').click() 	// return $('<div>A</div>')
 ```
 
 3. Attribute
-
+	- Getter: attr('속성')
+	- Setter: attr('속성', '값')
+```html
+<div class="a" id="A"></div>
+```
+```js
+$(".a").attr("id");	// "A"
+$(".a").attr("id", "B")	// id="B", jQuery
+$(".a").attr({
+	id: "C",
+	style: "background-color: #ccc"
+});
+```
 4. CSS
 
 5. Dimension
