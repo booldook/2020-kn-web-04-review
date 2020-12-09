@@ -23,7 +23,8 @@ $("#sample")
 document.getElementById("sample")
 ```
 
-0. Selector(선택자) : return jQuery
+### 0. Selector(선택자) : return jQuery
+	[Selector의 모든것](https://www.w3schools.com/jquery/jquery_ref_selectors.asp)
 	- find() children() eq() siblings() parent() parents() next() prev()
 ```js
 // 태그나 객체를 $() 로 실행하면 jQuery 객체가 리턴된다.
@@ -39,17 +40,19 @@ $('div, .wrap')	=> div 와 .wrap 같이 선택
 $("#sample")[0] // 자바스크립트
 ```
 
-1. Animation : return jQuery
+### 1. Animation : return jQuery
+	[애니메이션의 모든것](https://www.w3schools.com/jquery/jquery_ref_effects.asp)
 	- hide() show() fadeIn() fadeOut() slideUp() slideDown() toggle() fadeToggle() slideToggle() animate()
 
-2. DOM(Document Object Model) : return jQuery
+### 2. DOM(Document Object Model) : return jQuery
+	[DOM의 모든것](https://www.w3schools.com/jquery/jquery_ref_html.asp)
 	- append() appendTo() prepend() prependTo() remove() empty(), html(), text()
 ```js
 $('.a').append('<div>A</div>').click() 		// return $('.a')
 $('<div>A</div>').appendTo('.a').click() 	// return $('<div>A</div>')
 ```
 
-3. Attribute, dataSet
+### 3. Attribute, dataSet
 	- Getter: attr('속성')
 	- Setter: attr('속성', '값')
 	- Getter: data('키');
@@ -65,11 +68,36 @@ $(".a").attr({
 	style: "background-color: #ccc"
 });
 ```
-4. CSS
+### 4. CSS
+	- Getter: css('속성')
+	- Setter: css('속성', '값')
+	- Setter: css({ '속성': '값', ... })
+	- addClass('클래스명') removeClass('클래스명') toggleClass('클래스명')
+	- hasClass('클래스명')
 
-5. Dimension
+### 5. Dimension
+	[크기의 모든것](https://www.w3schools.com/jquery/jquery_dimensions.asp)
+	- width() height() 
+	- innerWidth() innerHeight() 
+	- outerWidth() outerHeight() 
+	- outerWidth(true) outerHeight(true)
+	- offset() => return {top: 200, left: 100}
+	- offset().top / offset().left
+	- position().top / position().left
+	- scrollTop()
 
-6. Event
+### 6. Event
+	[이벤트의 모든것](https://www.w3schools.com/jquery/jquery_ref_events.asp)
+	- click(), hover(), mouseover(), mouseleave(), mouseenter(), keyup(), keydown(), resize(), scroll() ... 
 
-7. getter/setter
-	- html(), text(), css(), attr(), 
+# Javascript Review
+## 프로그래밍은 변수와 함수의 집합니다.
+
+### 변수
+1. Primmitive(원시) Type
+	- String, Number, Boolean, undefined
+2. Reference(참조) Type
+	- Array, Object, Null
+```js
+
+```

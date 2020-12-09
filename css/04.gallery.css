@@ -3,5 +3,5 @@
 .gallery-wrapper .img-wrap {flex: auto; display: flex; justify-content: center; align-items: center;}
 .gallery-wrapper .img-wrap img {max-width: 80%; max-height: 80%;}
 .gallery-wrapper .thumb-wrap {flex: none; width: 200px; background-color: #eee; display: flex; flex-direction: column; overflow-y: auto;}
-.gallery-wrapper .thumb-wrap .thumb {flex: none; width: 100%; padding: 3%;}
+.gallery-wrapper .thumb-wrap .thumb {flex: none; width: 100%; padding: 4% 8%;}
 .gallery-wrapper .thumb-wrap .thumb img {width: 100%;}
